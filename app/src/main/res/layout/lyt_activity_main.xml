@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.raul9.ecopio.MainActivity">
+
+    <TextView
+        android:layout_width="142dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="59dp"
+        android:background="@drawable/ic_logo_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnHuellaVerde"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/ic_btn_norm"
+        android:fontFamily="Leelawadee UI"
+        android:text="Huella Verde"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:layout_below="@+id/textView3"
+        android:layout_toStartOf="@+id/btnInicio"
+        android:layout_marginTop="123dp" />
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:background="@drawable/ic_btn_norm"
+        android:text="Inicio"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBaseline="@+id/btnHuellaVerde"
+        android:layout_alignBottom="@+id/btnHuellaVerde"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:background="#00ffffff"
+        android:backgroundTint="#00ffffff"
+        android:fontFamily="Leelawadee UI"
+        android:text="\?"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:typeface="normal" />
+
+</RelativeLayout>
