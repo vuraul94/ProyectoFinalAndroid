@@ -6,11 +6,22 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/ic_huella_verde" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="SLIDE1"
-        android:textColor="@android:color/white"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="31dp"
+        android:text="Bacon ipsum dolor amet tenderloin pancetta kevin meatloaf turducken sausage swine, bacon flank biltong capicola. Leberkas ribeye venison drumstick cow swine brisket chicken fatback bresaola pancetta tenderloin sausage. Tri-tip boudin pig filet mignon flank cow corned beef turkey hamburger kielbasa brisket. "
+        android:textColor="#ffff"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

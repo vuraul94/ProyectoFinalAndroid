@@ -19,7 +19,6 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,7 +48,13 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".SlideActivity"></activity>
+        <activity android:name=".SlideActivity" />
+
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <activity
+            android:name=".RutaActivity"
+            android:label="@string/title_activity_ruta"></activity>
     </application>
 
 </manifest>

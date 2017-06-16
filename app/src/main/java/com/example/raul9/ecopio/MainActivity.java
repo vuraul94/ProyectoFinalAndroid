@@ -1,6 +1,7 @@
 package com.example.raul9.ecopio;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,8 +31,11 @@ public class MainActivity extends AppCompatActivity {
         btn_huella_verde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getBaseContext(), HuellaVerdeActivity.class);
-                startActivity(intent);
+                /*Intent intent = new Intent(getBaseContext(), HuellaVerdeActivity.class);
+                startActivity(intent);*/
+                Uri uriUrl = Uri.parse("http://www.tuhuellaecologica.org/");
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                startActivity(launchBrowser);
             }
         });
 
